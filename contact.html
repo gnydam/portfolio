@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
+    <title>Contact</title>
+  </head>
+  <body>
+
+    <div class="skip">
+    <h5>
+    <a href="#main">Jump to Content</a>
+    </h5>
+    </div>
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <img src="images/logo.jpg" alt="logo" class="logo">
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="types.html" class="nav-links">Types</a>
+            </li>
+            <li>
+                <a href="creations.html" class="nav-links">Creations</a>
+            </li>
+            <li>
+                <div class="active">
+                <a href="contact.html" class="nav-links">Contact Us</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header id="main">
+    <h1>  Additional Questions?</h1>
+    <h2> I hope I was able to give you a basic education in 3D printing.  If you have any additional questions please submit them below: </h2>
+    </header>
+
+    <div class="container">
+      <form action="action_page.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" >
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" >
+
+      <label for="question">Question</label>
+      <input type="text" id="question" name="question" style="height:200px">
+
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+
+
+    <h1> Frequently Asked Questions</h1>
+    <h2> Below are some of the most common 3D printing questions I hear </h2>
+
+    <button class="accordion">How much does it cost to 3D Print something?</button>
+    <div class="panel">
+      <p>The cost for a 3D Printed part is based on the amount of volume (size) of the part and the type of material being used.  These costs are generally different for each material type.</p>
+    </div>
+
+    <button class="accordion">What kinds of materials are available?</button>
+    <div class="panel">
+      <p>The materials that can be used with 3D Printers today is rapidly evolving.  The most common material used for 3D Printing is ABS, PLA, Polycarbonate, Nylon, Rubber like material, Paper, Wax, Carbon Fiber, Ceramic, Powder, and various Metals.  Each type of 3D Printing technology will utilize a different material.  Certain printers can also produce multi-materials in a single build.</p>
+    </div>
+
+    <button class="accordion">How long does it take to print?</button>
+    <div class="panel">
+      <p>Build times are based on the volume (size) of the part.  Different 3D Printing technologies have various build times.  Small parts can print as quickly as 15 minutes while larger parts can take the entire day to build.  In some cases, build times can be reduced by re-orienting the part in your printing software.</p>
+    </div>
+
+    <button class="accordion">How durable are the parts?</button>
+    <div class="panel">
+      <p>Finished parts are generally durable and can withstand normal handling.  If you are using them for functional design, FDM (Fused Deposition Modeling) parts have been known to be stronger and last longer.  Resin based parts that are cured with a UV light will typically degrade faster, especially if exposed to high temperatures, humidity, and sunlight.</p>
+    </div>
+
+    <button class="accordion">Are colors available?</button>
+    <div class="panel">
+      <p>Yes, colors are available.  Most printers produce parts using a mono (single) color while others have the capability to use the full spectrum of colors to produce multi-colored parts.</p>
+    </div>
+
+        <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+        mainNav.classList.toggle('active');
+        });
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("act");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+    <footer>
+      <p>Grace Nydam: University of Michigan School of Information Class of 2021</p>
+    </footer>
+  </body>
+</html>

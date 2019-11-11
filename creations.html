@@ -5,52 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
     <title>Creations</title>
   </head>
   <body>
 
-    <div class="slideshow-container">
-
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 4</div>
-        <img src="img1.jpg" style="width:100%">
-        <div class="text">3D printed lamp</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 4</div>
-        <img src="img2.jpg" style="width:100%">
-        <div class="text">3D printed heels</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 4</div>
-        <img src="img3.jpg" style="width:100%">
-        <div class="text">3D printed guitar</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
-        <img src="img4.jpg" style="width:100%">
-        <div class="text">3D printed cast</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="skip">
+    <h5>
+    <a href="#main">Jump to Content</a>
+    </h5>
     </div>
-    <br>
 
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <img src="images/logo.jpg" alt="logo" class="logo">
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="types.html" class="nav-links">Types</a>
+            </li>
+            <li>
+                <div class="active">
+                <a href="creations.html" class="nav-links">Creations</a>
+                </div>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-links">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+        <header id="main">
+        <h1> 3D Printed Creations </h1>
+        <h2> With the variety of 3D printing techniques, materials, and approaches so many things can be made via 3D printing.  Here are some cool creations below that range from 3D printed body parts to 3D printed high heels! </h2>
+        </header>
+
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <img src="images/img1.jpg" alt="3D printed lamp image" style="width:100%">
+            <div class="text">lamp</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 10</div>
+            <img src="images/img2.jpg" alt="3D printed heels image" style="width:100%">
+            <div class="text">high heels</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <img src="images/img3.jpg" alt="3D printed guitar image" style="width:100%">
+            <div class="text">guitar</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="images/img4.jpg" alt="3D printed cast image" style="width:100%">
+            <div class="text">arm cast</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 10</div>
+            <img src="images/img5.jpg" alt="3D printed chess board image" style="width:100%">
+            <div class="text">chess board</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="images/img6.jpg" alt="3D printed iPad stand image" style="width:100%">
+            <div class="text">iPad stand</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="images/img7.jpg" alt="3D printed house image" style="width:100%">
+            <div class="text">house</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="images/img8.jpg" alt="3D printed ear image" style="width:100%">
+            <div class="text">ear</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="images/img9.jpg" alt="3D printed meal image" style="width:100%">
+            <div class="text">meal</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 10</div>
+            <img src="images/img10.jpg" alt="3D printed dinosaur fossil replica image" style="width:100%">
+            <div class="text">dinosaur fossil replica</div>
+          </div>
+
+
+          <!-- Next and previous buttons -->
+        <div class = "arrows">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style= "text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+
+    navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+    });
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
 
     <footer>
-      <p>University of Michigan School of Information</p>
+      <p>Grace Nydam: University of Michigan School of Information Class of 2021</p>
     </footer>
   </body>
 </html>

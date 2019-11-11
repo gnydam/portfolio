@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
+    <title>Types</title>
+  </head>
+  <body>
+
+    <div class="skip">
+    <h5>
+    <a href="#main">Jump to Content</a>
+    </h5>
+    </div>
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <img src="images/logo.jpg" alt="logo" class="logo">
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <div class="active">
+                <a href="types.html" class="nav-links">Types</a>
+                </div>
+            </li>
+            <li>
+                <a href="creations.html" class="nav-links">Creations</a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-links">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+
+    navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+    });
+    </script>
+
+
+    <header id="main">
+    <h1> Different Types of 3D printing</h1>
+    <h2> There are several types of 3D printing which use a variety of different materials and processes.  Some of the main ones are below. </h2>
+    </header>
+
+        <div class="main">
+          <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="images/SLA_pic.jpg" alt="Stereolithography image"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Stereolithography</h2>
+                  <p class="card_text">Stereolithography makes use of a liquid plastic as the source material and this liquid plastic is transformed into a 3D object layer by layer.</p>
+                  <button class="btn card_btn"><a href="https://en.wikipedia.org/wiki/Stereolithography">READ MORE</a></button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="images/DLP_pic.jpg" alt="Digital Light Processing image"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Digital Light Processing</h2>
+                  <p class="card_text">DLP technology is very similar to Stereolithography but differs in that it uses a different light source and makes use of a liquid crystal display panel.</p>
+                  <button class="btn card_btn"><a href="https://en.wikipedia.org/wiki/Digital_Light_Processing">READ MORE</a></button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="images/FDM_pic.jpg" alt="Fused Deposition Modeling image"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Fused Deposition Modeling</h2>
+                  <p class="card_text">Objects are built by heating a thermoplastic filament to its melting point and extruding the thermoplastic layer by layer.</p>
+                  <button class="btn card_btn"><a href="https://en.wikipedia.org/wiki/Fused_filament_fabrication">READ MORE</a></button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="images/SLS_pic.jpg" alt="Selective Laser Sintering image"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Selective Laser Sintering</h2>
+                  <p class="card_text">SLS makes use of powdered material that is placed in a vat. For each layer, a layer of powdered material is placed on top of the previous layer using a roller and then the powdered material is laser sintered according to a certain pattern for building up the object to be created.</p>
+                  <button class="btn card_btn"><a href="https://en.wikipedia.org/wiki/Selective_laser_sintering">READ MORE</a></button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="images/EBM_pic.jpg" alt="Electron Beam Melting image"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Electron Beam Melting</h2>
+                  <p class="card_text">The machine distributes a layer of metal powder onto a build platform, which is melted by the electron beam. The build platform is then lowered and the next layer of metal powder will be coated on top.</p>
+                  <button class="btn card_btn"><a href="https://en.wikipedia.org/wiki/Electron-beam_additive_manufacturing">READ MORE</a></button>
+                </div>
+              </div>
+            </li>
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="images/LOM_pic.jpg" alt="Laminated Object Manufacturing image"></div>
+                <div class="card_content">
+                  <h2 class="card_title">Laminated Object Manufacturing</h2>
+                  <p class="card_text">LOM is a rapid prototyping system.  In it, layers of adhesive-coated paper, plastic, or metal laminates are successively glued together and cut to shape with a knife or laser cutter.</p>
+                  <button class="btn card_btn"><a href="https://en.wikipedia.org/wiki/Laminated_object_manufacturing">READ MORE</a></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+    <footer>
+      <p>Grace Nydam: University of Michigan School of Information Class of 2021</p>
+    </footer>
+  </body>
+</html>

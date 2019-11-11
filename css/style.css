@@ -1,0 +1,639 @@
+h1 {
+	Font-Family: 'Ruda', Sans-Serif;
+	Font-Size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15px;
+
+}
+
+h2 {
+	Font-Family: 'Ruda', Sans-Serif;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+	padding-right: 40px;
+}
+
+h3 {
+	Font-Family: 'Ruda', Sans-Serif;
+  font-size: 15px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+	padding-left: 15px;
+	line-height: 30px;
+}
+
+h4 {
+	Font-Family: 'Roboto Slab', Serif;
+	font-size: 15px;
+	line-height: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h5 {
+	Font-Family: 'Roboto Slab', Serif;
+	background-color: black;
+	font-size: 14px;
+	line-height: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+	Font-Family: 'Roboto Slab', Serif;
+	font-size: 14px;
+	line-height: 25px;
+  padding-right: 50px;
+	padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+title {
+  text-align: center;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  }
+
+body {
+  margin: 0 0 100px; /* bottom = footer height */
+  }
+
+header{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+a{
+	color: white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
+
+	/*NAVIGATION*/
+
+    .navbar {
+    font-size: 18px;
+    background-color: black;
+    padding-bottom: 10px;
+		Font-Family: 'Ruda', Sans-Serif;
+    }
+
+    .nav-links{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 255);
+      }
+
+    .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+    }
+
+    .logo {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 50px;
+    height: 40px;
+    }
+
+    .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    }
+
+    .active {
+		text-decoration: underline;
+    }
+
+    @media screen and (min-width: 768px) {
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    }
+
+    .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    }
+
+    .main-nav li {
+    margin: 0;
+    }
+
+    .nav-links {
+    margin-left: 40px;
+    }
+
+    .logo {
+    margin-top: 0;
+    }
+
+    .navbar-toggle {
+    display: none;
+    }
+}
+/*END NAVIGATION*/
+
+
+
+/*HOME*/
+.gif {
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.gifText {
+	Font-Family: 'Ruda', Sans-Serif;
+	Font-Size: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+	text-shadow: 0 0 3px black;
+}
+
+.slash-text {
+	font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.9);
+}
+.slash-text .top,
+.slash-text .bottom {
+  text-align: center;
+  font: 62px/100px 'Ruda';
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+.slash-text .top:before,
+.slash-text .bottom:before {
+  content: attr(title);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+.slash-text .top {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 0;
+  bottom: 50%;
+}
+.slash-text .top:before {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+}
+.slash-text .bottom {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 5px;
+  bottom: 0;
+}
+.slash-text .bottom:before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+
+.whiteBox, .blackBox2{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.whiteBox{
+  background: white;
+  color: black;
+  text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.blackBox{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 60px 60px 60px 60px;
+}
+
+.blackBox2{
+  background: black;
+  color: white;
+  text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*TIMELINE*/
+.timeline {
+  position: relative;
+  margin: 0 auto;
+	background-color: black;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.box {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 6px solid #faed27;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+/* arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* circle for boxes on the right */
+.right::after {
+  left: -16px;
+}
+
+.boxText {
+  padding: 10px 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .box {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* All arrows are pointing left */
+  .box::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+/*END TIMELINE*/
+/*END HOME*/
+
+
+/* CREATIONS*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.7s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.text {
+  color: black;
+  Font-Family: 'Roboto Slab', Serif;
+  font-size: 14px;
+	padding-top: 15px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+	Font-Family: 'Roboto Slab', Serif;
+  color: white;
+	background-color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+/* END CREATIONS */
+
+
+/*TYPE*/
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: black;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background-color: black;
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+/*END TYPES*/
+
+
+/*CONTACT*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 14px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #000000;
+	font-style: 'Roboto Slab', Serif;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 35px;
+	Font-Family: 'Roboto Slab', Serif;
+}
+
+/* FAQ Section*/
+.accordion {
+	Font-Family: 'Roboto Slab', Serif;
+  background-color: #eee;
+  color: black;
+	font-size: 14px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.act, .accordion:hover {
+  background-color: gray;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+.act:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/*END CONTACT*/
+
+@media screen and (prefers-reduced-motion: reduce){
+	.prev, .next {
+		transition: none;
+	}
+
+	.accordion {
+	  transition: none;
+	}
+
+}
