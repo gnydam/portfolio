@@ -45,122 +45,46 @@
         </header>
 
 
-        <div class="slideshow-container">
-
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 10</div>
-            <img src="images/img1.jpg" alt="3D printed lamp image" style="width:100%">
-            <div class="text">lamp</div>
+        <div class="gallery">
+        <div class="grid">
+          <div class="cell">
+            <img src="images/img1.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 10</div>
-            <img src="images/img2.jpg" alt="3D printed heels image" style="width:100%">
-            <div class="text">high heels</div>
+          <div class="cell">
+            <img src="images/img2.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 10</div>
-            <img src="images/img3.jpg" alt="3D printed guitar image" style="width:100%">
-            <div class="text">guitar</div>
+          <div class="cell">
+            <img src="images/img3.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">4 / 10</div>
-            <img src="images/img4.jpg" alt="3D printed cast image" style="width:100%">
-            <div class="text">arm cast</div>
+          <div class="cell">
+            <img src="images/img4.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">5 / 10</div>
-            <img src="images/img5.jpg" alt="3D printed chess board image" style="width:100%">
-            <div class="text">chess board</div>
+          <div class="cell">
+            <img src="images/img5.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">6 / 10</div>
-            <img src="images/img6.jpg" alt="3D printed iPad stand image" style="width:100%">
-            <div class="text">iPad stand</div>
+          <div class="cell">
+            <img src="images/img6.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">7 / 10</div>
-            <img src="images/img7.jpg" alt="3D printed house image" style="width:100%">
-            <div class="text">house</div>
+          <div class="cell">
+            <img src="images/img7.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">8 / 10</div>
-            <img src="images/img8.jpg" alt="3D printed ear image" style="width:100%">
-            <div class="text">ear</div>
+          <div class="cell">
+            <img src="images/img8.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">9 / 10</div>
-            <img src="images/img9.jpg" alt="3D printed meal image" style="width:100%">
-            <div class="text">meal</div>
+          <div class="cell">
+            <img src="images/img9.jpg" class="responsive-image" />
           </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">10 / 10</div>
-            <img src="images/img10.jpg" alt="3D printed dinosaur fossil replica image" style="width:100%">
-            <div class="text">dinosaur fossil replica</div>
+          <div class="cell">
+            <img src="images/img10.jpg" class="responsive-image" />
           </div>
-
-
-          <!-- Next and previous buttons -->
-        <div class = "arrows">
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="cell">
+            <img src="images/img11.jpg" class="responsive-image" />
+          </div>
+          <div class="cell">
+            <img src="images/img12.jpg" class="responsive-image" />
+          </div>
         </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style= "text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-
-    <script>
-    let mainNav = document.getElementById('js-menu');
-    let navBarToggle = document.getElementById('js-navbar-toggle');
-
-    navBarToggle.addEventListener('click', function () {
-    mainNav.classList.toggle('active');
-    });
-
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
+      </div>
 
 
     <footer>
